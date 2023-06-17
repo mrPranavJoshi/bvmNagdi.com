@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --web-bc: rgb(118 0 0 / 82%);
+    --web-bc-light: rgba(118, 0, 0, 0.575);
+}
+
+/* Navigation Bar  */
+.navigation-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--web-bc);
+    width: 100%;
+    color: white;
+}
+
+.school-logo {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.school-name {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.school-name h1{
+    font-size: 3vw;
+}
+.school-name h2{
+    font-size: 2vw;
+}
+
+.om-png {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navigation-2 {
+    background-color: var(--web-bc-light);
+    margin-top: 3px;
+    height: 60px;
+    width: 100%;
+}
+
+
+.navigations ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-evenly;
+}
+
+.navigations ul li {
+    list-style: none;
+}
+
+.navigations ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.navigations ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.navigations ul li a:focus,
+.navigations ul li a:hover {
+    color: #fff;
+}
+
+.navigations ul li a:focus:after,
+.navigations ul li a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.navigations ul li a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* Facilities */
+.facilities {
+    display: flex;
+    justify-content: center;
+}
+
+.facl-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.facl {
+    background-color: #e2e2e2;
+    /* border: 2px solid black; */
+    margin: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    /* min-width: 80vw;
+    max-width: 300px; */
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* star students */
+.students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.students .star-heading h2{
+    font-size: 2em;
+}
+
+.star-students{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.star-std-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+
+.star-std-img{
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+/* Form  */
+.admission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admission-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    height: 60vh;
+    margin: 20px;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+
+}
+
+.std-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submit-btn {
+    margin: 30px;
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: var(--web-bc);
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.submit-btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid var(--web-bc);
+}
+
+.submit-btn span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+
+.submit-btn:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: var(--web-bc);
+}
+
+.submit-btn:hover {
+    color: white;
+}
+
+.submit-btn:active span::before {
+    background: var(--web-bc);
+}
+
+/* Asides */
+.contact-sticky {
+    position: sticky;
+    top: 200px;
+    left: 10px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 7.4em;
+    height: 2em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+    transform: rotate(90deg);
+    right: 40px;
+}
+
+.contact-btn p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.15em;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #25D366;
+}
+
+.contact-btn svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+}
+
+.contact-btn:hover p {
+    left: 0.5em;
+    color: #fff
+}
+
+.contact-btn:hover svg {
+    opacity: 1;
+}
+
+.contact-btn:hover {
+    background-color: #25D366;
+}
+
+.admission-open{
+    position: sticky;
+    top: 300px;
+}
